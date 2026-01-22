@@ -19,5 +19,6 @@ public class NegativoOuNao {
 		}
 		
 		sc.close();
+		//teste
 	}
 }
