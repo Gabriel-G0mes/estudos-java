@@ -6,14 +6,14 @@ public class Employee {
     public double tax;
 
     public double netSalary() {
-        return  grossSalary -= tax;
+        return grossSalary - tax;
     }
 
     public double increaseSalary(double percentage) {
-        return grossSalary -= (grossSalary * percentage / 100);
+        return grossSalary += grossSalary * percentage / 100.0;
     }
 
     public String toString() {
         return String.format("Updated data: %s, $ %.2f", name, netSalary());
     }
-
+}
