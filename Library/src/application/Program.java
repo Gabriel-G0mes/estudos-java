@@ -13,7 +13,7 @@ public class Program {
     while(decisao.equalsIgnoreCase("S")) {
 
         System.out.println("----------------");
-        System.out.println("Olá, adicione o livro a prateleira ?");
+        System.out.println("Olá, adicione um novo livro na prateleira");
 
 
         System.out.print("Título: ");
@@ -22,18 +22,19 @@ public class Program {
         System.out.print("Autor: ");
         books.author = input.nextLine();
 
+        System.out.print("Gênero: ");
+        books.genre = input.nextLine();
+
         System.out.print("Quantidade de páginas: ");
         books.numberPages = input.nextInt();
         input.nextLine();
 
-        System.out.print("Gênero: ");
-        books.genre = input.nextLine();
+        System.out.print("Foi lido? (Sim/Não?) ");
+        books.itRead = input.nextLine();
 
-        System.out.print("Foi lido? ");
-        books.itRead = input.nextBoolean();
-        input.nextLine();
+        System.out.println(books);
 
-        System.out.println("S/N?");
+        System.out.println("Quer adicionar mais um ? (S/N)");
         decisao = input.nextLine();
     }
 
